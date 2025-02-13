@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+section:first-of-type {
+    padding-top: 70px;
+}
+
 
 .navbar {
     display: flex;

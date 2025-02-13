@@ -3,18 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
-section:first-of-type {
-    padding-top: 70px;
-}
-
 
 .navbar {
     display: flex;
     align-items: center;
     position: fixed;
+    top: 0;
+    left: 0;
     background-color: rgb(78, 93, 93);
     width: 100%;
-    height: 7%;
+    height: 70px;
+    z-index: 10;
+}
+
+section:first-of-type {
+    padding-top: 80px;
 }
 
 .nav-link {
@@ -30,7 +33,7 @@ section:first-of-type {
     align-items: center;
     justify-content: center;
     height: 100%;
-    padding: 0; /* Remove padding from <li> */
+    padding: 0;
 }
 
 .nav-link li:hover {
@@ -45,7 +48,7 @@ section:first-of-type {
     text-decoration: none;
     color: white;
     height: 100%;
-    padding: 0 30px; /* Add padding to <a> instead of <li> */
+    padding: 0 30px;
     box-sizing: border-box;
     transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -53,4 +56,121 @@ section:first-of-type {
 .nav-link li a:hover {
     transform: scale(1.1);
     color: beige;
+}
+
+#overview {
+    padding: 40px;
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+#overview h1 {
+    color: #2c3e50;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+#overview p {
+    font-size: 18px;
+    line-height: 2;
+    color: #34495e;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+#overview a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#overview a:hover {
+    text-decoration: underline;
+}
+
+#overview h2 {
+    font-size: 26px;
+    color: #2c3e50;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#overview ul {
+    padding-left: 20px;
+    list-style-type: disc;
+    font-size: 18px;
+    color: #555;
+    margin-top: 20px;
+}
+
+#overview li {
+    margin-bottom: 15px;
+}
+
+body{
+    background-color: #f4f4f9;
+}
+
+
+#exp, #contact {
+    padding: 40px;
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+#exp h1, #contact h1 {
+    color: #2c3e50;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+#exp p, #contact p {
+    font-size: 18px;
+    line-height: 2;
+    color: #34495e;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+#exp a, #contact a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#exp a:hover, #contact a:hover {
+    text-decoration: underline;
+}
+
+#exp h2, #contact h2 {
+    font-size: 26px;
+    color: #2c3e50;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#exp ul, #contact ul {
+    padding-left: 20px;
+    list-style-type: disc;
+    font-size: 18px;
+    color: #555;
+    margin-top: 20px;
+}
+
+#exp li, #contact li {
+    margin-bottom: 15px;
 }

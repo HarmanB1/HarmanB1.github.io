@@ -19,6 +19,8 @@
 
 }
 .phone{
+    border: #14181c;
+   
     border-radius: 10px;
     display: inline-block;
     padding-left: 2%;
@@ -67,7 +69,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgb(78, 93, 93);
+    background-color: #14181c;
     width: 100%;
     height: 70px;
     z-index: 10;
@@ -94,7 +96,7 @@ section:first-of-type {
 }
 
 .nav-link li:hover {
-    background-color: #4CAF50;
+    background-color: #cfcbd5;
 }
 
 .nav-link li a {
@@ -112,14 +114,14 @@ section:first-of-type {
 
 .nav-link li a:hover {
     transform: scale(1.1);
-    color: beige;
+    color: #8d8698;
 }
 
 #overview {
     padding: 40px;
     max-width: 700px;
     margin: 40px auto;
-    background-color: #f7f7f7;
+    background-color: #ffffffed;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     font-family: 'Arial', sans-serif;
@@ -172,7 +174,8 @@ section:first-of-type {
 }
 
 body{
-    background-color: #f4f4f9;
+  
+    background-color: #1a1f25;
 }
 
 
@@ -180,7 +183,7 @@ body{
     padding: 40px;
     max-width: 700px;
     margin: 40px auto;
-    background-color: #ffffff;
+    background-color: #ffffffed;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     font-family: 'Arial', sans-serif;

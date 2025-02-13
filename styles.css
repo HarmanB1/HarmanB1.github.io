@@ -3,6 +3,27 @@
     padding: 0;
     box-sizing: border-box;
 }
+.nav-logo2{
+    width: 70px;
+    height: 100%;
+
+
+}
+.film{
+    padding-left: 2%;
+    width: 100%;
+    height: 10%;
+
+
+}
+.chess{
+    padding-left: 10%;
+    width: 90%;
+    height: 10%;
+    align-items: center;
+
+
+}
 
 .navbar {
     display: flex;

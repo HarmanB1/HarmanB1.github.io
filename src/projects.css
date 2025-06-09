@@ -1,0 +1,80 @@
+/* Projects.css */
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    margin: 2rem auto;
+    background: rgba(44, 44, 66, 0.5);
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    max-width: 1000px;
+    min-height: 400px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-btn {
+    background-color: var(--luxury-purple);
+    color: #fff;
+    font-size: 1.75rem;
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(162, 134, 255, 0.4);
+  }
+  
+  .nav-btn:hover {
+    background-color: var(--primary);
+    transform: scale(1.1);
+  }
+  
+  .project-card {
+    flex: 1;
+    background: rgba(44, 44, 66, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    color: var(--light);
+    max-width: 500px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .project-image {
+    height: 200px;
+    background: var(--void);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--quantum-blue);
+    font-size: 1.5rem;
+  }
+  
+  .project-info {
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.02);
+  }
+  
+  .project-info h3 {
+    margin: 0;
+    color: var(--quantum-blue);
+    font-size: 1.25rem;
+  }
+  
+  .project-info p {
+    margin-top: 0.5rem;
+    color: var(--platinum);
+    font-size: 1rem;
+  }
+  

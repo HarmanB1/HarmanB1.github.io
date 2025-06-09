@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import {HashRoutr, Route, Routes, Link, HashRouter} from "react-router-dom"
+import { Route, Routes, Link, HashRouter, NavLink} from "react-router-dom"
 import './App.css'
 
-import {home} from './home.js'
-import {contact} from './contact.js'
-import {about} from './about.js'
-import { projects } from '../projects.js'
+import {Home} from './home.jsx'
+import {Contact} from './contact.jsx'
+import {About} from './about.jsx'
+import {Projects}  from './projects.jsx'
 
 function App() {
 
@@ -15,29 +15,48 @@ function App() {
       <nav>
         <ul>
           <li>
-            <Link to="/" >Home</Link>
+            <NavLink
+              to="/"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Home
+            </NavLink>
           </li>
           <li>
-            <Link to="About">About</Link>
+            <NavLink
+              to="/about"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              About
+            </NavLink>
           </li>
           <li>
-            <Link to ="/projects">Projects</Link>
+            <NavLink
+              to="/projects"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Projects
+            </NavLink>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <NavLink
+              to="/contact"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Contact
+            </NavLink>
           </li>
         </ul>
       </nav>
 
       <Routes>
-        <Roout   path='/' element ={<home />} />
-        <Route   path='/about' element ={<about />} />
-        <Route   path='/projects' element ={<projects />} />
-        <Route   path='/contact' element ={<contact />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </HashRouter>
-    
-  )
+  );
 }
 
 export default App

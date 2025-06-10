@@ -1,63 +1,60 @@
 .card {
-    background: rgba(30, 30, 30, 0.8);
-    border-radius: 1.5rem;
+    width: 100%;
+    max-width: 600px;
+    background: #1a1a1a;
+    border-radius: 1rem;
     overflow: hidden;
-    box-shadow: 0 0 20px var(--neon-fuchsia);
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
-    transition: transform 0.3s ease;
-    outline: none;
   }
   
   .card:hover {
-    transform: translateY(-6px);
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--neon-fuchsia, #ff00ff);
   }
   
-  .card-img-container {
-    position: relative;
-  }
-  
-  .card-img {
+  .cardImg {
     width: 100%;
-    height: auto;
+    height: 250px;
+    background: #333;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cardImg img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    display: block;
-    border-bottom: 2px solid var(--quantum-blue);
   }
   
-  .status-badge {
+  .status-tag {
     position: absolute;
-    top: 12px;
-    right: 12px;
-    padding: 0.4rem 0.7rem;
-    border-radius: 1rem;
-    font-size: 0.85rem;
-    font-weight: bold;
-    color: white;
-    background: var(--quantum-blue);
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    top: 1rem;
+    left: 1rem;
+    padding: 0.3rem 0.7rem;
+    font-size: 0.8rem;
+    background: #ff00ff;
+    color: black;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
   }
   
-  .status-badge.finished {
-    background: var(--neon-fuchsia);
+  .status-tag.finished {
+    background: limegreen;
+    color: black;
   }
   
-  .status-badge.progress {
-    background: var(--gold-accent);
+  .status-tag.in-progress {
+    background: orange;
+    color: black;
   }
   
-  .card-body {
-    padding: 1.25rem;
-  }
-  
-  .card-body h3 {
-    margin: 0 0 0.75rem;
-    font-size: 1.5rem;
-    color: var(--luxury-purple);
-  }
-  
-  .card-description p {
-    margin-bottom: 0.75rem;
-    line-height: 1.6;
-    color: #ddd;
+  .cardBody {
+    padding: 1rem;
+    color: #eee;
   }
   

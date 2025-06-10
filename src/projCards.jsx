@@ -1,32 +1,24 @@
 
 import './ProjCards.css'
 
-export const Card = ({title, descrip, image, status, link}) =>{
-    const isFinished = status.toLowerCase() === "finished";
-
-    return (
-      <div className="card" tabIndex={0} role="button" aria-pressed="false">
-        <div
-          className="card-img-container"
-          onClick={() => window.open(link, "_blank")}
-        >
-          {image && <img src={image} alt={title} className="card-img" />}
-          <span
-            className={`status-badge ${isFinished ? "finished" : "progress"}`}
-          >
-            {isFinished ? "✓ Finished" : "🛠 In Progress"}
-          </span>
-        </div>
-
-        <div className="card-body">
-          <h3>{title}</h3>
-          <div className="card-description">
-            {descrip.split("\n").map((para, i) => (
-              <p key={i}>{para}</p>
-            ))}
-          </div>
-        </div>
+export const Card = ({ title, descrip, image, status, link }) => {
+  return (
+    <div
+      className="card"
+      onClick={() => window.open(link, "_blank")}
+      tabIndex={0}
+      role="button"
+      aria-pressed="false"
+    >
+      <div className="cardImg" aria-label={`Image for ${title}`}>
+        {image ? <img src={image} alt={title} /> : null}
+        <span className={`status-tag ${status.toLowerCase()}`}>{status}</span>
       </div>
-    );
-
-}
+      <div className="cardBody">
+        <h3>{title}</h3>
+        <p>{descrip}</p>
+      </div>
+    </div>
+  );
+};
+  

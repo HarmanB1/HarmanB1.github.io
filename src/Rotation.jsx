@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import "./Rotation.css";
 
 export const Rotation = ({ cards }) => {
   const [currIndex, setCurrIndex] = useState(0);
@@ -28,7 +29,7 @@ export const Rotation = ({ cards }) => {
 
   return (
     <div className="rotContainer">
-      <button className="nav-btn" onClick={prevCard} aria-label="Previous Card">
+      <button className="nav-btn" onClick={prevCard}>
         &lt;
       </button>
 
@@ -45,7 +46,7 @@ export const Rotation = ({ cards }) => {
         </div>
       </div>
 
-      <button className="nav-btn" onClick={nextCard} aria-label="Next Card">
+      <button className="nav-btn" onClick={nextCard}>
         &gt;
       </button>
     </div>

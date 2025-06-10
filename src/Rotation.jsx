@@ -27,6 +27,11 @@ export const Rotation = ({ cards }) => {
     startTimer();
   };
 
+  const goToIndex = (i) => {
+    setCurrIndex(i);
+    startTimer();
+  };
+
   return (
     <div className="rotContainer">
       <button className="nav-btn" onClick={prevCard}>
@@ -42,6 +47,15 @@ export const Rotation = ({ cards }) => {
             <div className="slide" key={i}>
               {card}
             </div>
+          ))}
+        </div>
+        <div className="dots">
+          {cards.map((_, i) => (
+            <span
+              key={i}
+              className={`dot ${i === currIndex ? "active" : ""}`}
+              onClick={() => goToIndex(i)}
+            />
           ))}
         </div>
       </div>

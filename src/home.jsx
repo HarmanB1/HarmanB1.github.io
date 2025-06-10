@@ -46,13 +46,12 @@ export const Home = () => {
             challenge the boundaries of user interaction and smart technology.
           </p>
           <div className="icon-text">
-            <FaGraduationCap className="section-icon" color="#4f46e5" />
+            <FaGraduationCap className="section-icon" />
             <span>Second-year CS student at SFU</span>
           </div>
         </div>
       </div>
 
-      
       <div className="glass-card projects-section">
         <h2>Currently Working On</h2>
         <p>To see finished projects, check projects tab</p>
@@ -83,7 +82,7 @@ export const Home = () => {
 
         {/* Tools & Technologies */}
         <h3>
-          <FaTools style={{ marginRight: 6 }} /> Tools & Technologies
+          <FaTools className="section-icon" /> Tools & Technologies
         </h3>
         <div className="skills-highlight">
           <span className="skill-tag">Git</span>
@@ -115,11 +114,11 @@ export const Home = () => {
       <div className="glass-card interests-section">
         <h2>Personal Interests</h2>
         <div className="interest-item">
-          <FaDumbbell className="interest-icon" color="#10b981" />
+          <FaDumbbell className="interest-icon" />
           <span>Fitness & Gym</span>
         </div>
         <div className="interest-item">
-          <FaChess className="interest-icon" color="#f59e0b" />
+          <FaChess className="interest-icon" />
           <span>
             Chess -{" "}
             <a
@@ -133,7 +132,7 @@ export const Home = () => {
           </span>
         </div>
         <div className="interest-item">
-          <FaFilm className="interest-icon" color="#8b5cf6" />
+          <FaFilm className="interest-icon" />
           <span>
             Movies -{" "}
             <a

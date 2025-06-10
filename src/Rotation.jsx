@@ -3,32 +3,42 @@ import "./Rotation.css";
 
 export const Rotation = ({ cards }) => {
   const [currIndex, setCurrIndex] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(true);
   const timerRef = useRef(null);
 
   const startTimer = () => {
     clearInterval(timerRef.current);
     timerRef.current = setInterval(() => {
-      setCurrIndex((c) => (c + 1) % cards.length);
+      goToIndex((currIndex + 1) % cards.length);
     }, 5000);
   };
 
   useEffect(() => {
     startTimer();
     return () => clearInterval(timerRef.current);
-  }, [cards.length]);
+  }, [currIndex, cards.length]);
 
   const prevCard = () => {
-    setCurrIndex((c) => (c === 0 ? cards.length - 1 : c - 1));
-    startTimer();
+    goToIndex(currIndex === 0 ? cards.length - 1 : currIndex - 1);
   };
 
   const nextCard = () => {
-    setCurrIndex((c) => (c + 1) % cards.length);
-    startTimer();
+    goToIndex((currIndex + 1) % cards.length);
   };
 
   const goToIndex = (i) => {
-    setCurrIndex(i);
+    // Disable transition only when jumping from last to first
+    if (currIndex === cards.length - 1 && i === 0) {
+      setIsTransitioning(false); // turn off transition
+      setCurrIndex(i);
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          setIsTransitioning(true); // turn it back on
+        });
+      });
+    } else {
+      setCurrIndex(i);
+    }
     startTimer();
   };
 
@@ -40,7 +50,7 @@ export const Rotation = ({ cards }) => {
 
       <div className="slider-window">
         <div
-          className="slider"
+          className={`slider ${isTransitioning ? "slide-active" : ""}`}
           style={{ transform: `translateX(-${currIndex * 100}%)` }}
         >
           {cards.map((card, i) => (

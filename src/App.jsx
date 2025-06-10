@@ -6,6 +6,7 @@ import { Contact } from "./contact.jsx";
 import { About } from "./about.jsx";
 import { Projects } from "./projects.jsx";
 import { FiSun, FiMoon } from "react-icons/fi";
+import { NotFound } from "./error.jsx";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -95,7 +96,10 @@ function App() {
               path="/projects"
               element={<Projects darkMode={darkMode} />}
             />
+
             <Route path="/contact" element={<Contact darkMode={darkMode} />} />
+
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
       </div>

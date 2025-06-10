@@ -56,11 +56,7 @@ export const Contact = () => {
               GitHub
             </a>
           </li>
-          <li>
-            <a href="https://x.com/HarmanBhogal3" target="_blank">
-              Twitter/X
-            </a>
-          </li>
+          
           <li>
             <a href="https://discord.com/users/relaxi#0137" target="_blank">
               Discord: relaxi#0137
@@ -69,18 +65,7 @@ export const Contact = () => {
         </ul>
       </div>
 
-      {/* Optional future: Add a contact form here */}
-      {/* 
-        <div className="contact-group">
-          <h2>Message Me</h2>
-          <form>
-            <input type="text" placeholder="Your name" required />
-            <input type="email" placeholder="Your email" required />
-            <textarea placeholder="Your message" rows="4" required></textarea>
-            <button type="submit">Send Message</button>
-          </form>
-        </div>
-        */}
+      
     </section>
   );
 };

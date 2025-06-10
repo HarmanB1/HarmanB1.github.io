@@ -15,7 +15,7 @@ export const Card = ({title, descrip, image, status, link}) =>{
             <div className="descrip">
                 <h3>{title}</h3>
                 <p className={`status: ${status}`}>{status} </p>
-                <p>{descriptioin}</p>
+                <p>{descrip}</p>
             </div>
         </div>
     )

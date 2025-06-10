@@ -1,60 +1,71 @@
 .card {
-    width: 100%;
-    max-width: 600px;
-    background: #1a1a1a;
-    border-radius: 1rem;
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(255, 0, 255, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px var(--neon-fuchsia, #ff00ff);
-  }
-  
-  .cardImg {
-    width: 100%;
-    height: 250px;
-    background: #333;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .cardImg img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .status-tag {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    padding: 0.3rem 0.7rem;
-    font-size: 0.8rem;
-    background: #ff00ff;
-    color: black;
-    border-radius: 0.5rem;
-    text-transform: uppercase;
-  }
-  
-  .status-tag.finished {
-    background: limegreen;
-    color: black;
-  }
-  
-  .status-tag.in-progress {
-    background: orange;
-    color: black;
-  }
-  
-  .cardBody {
-    padding: 1rem;
-    color: #eee;
-  }
-  
+  width: 100%;
+  max-width: 600px;
+  background: var(--surface);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border: 1px solid var(--border-color);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px var(--light-purple);
+}
+
+.cardImg {
+  width: 100%;
+  height: 250px;
+  background: var(--hover-bg);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.status-tag {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.8rem;
+  background: var(--light-purple);
+  color: var(--surface);
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.status-tag.finished {
+  background: var(--mint-green);
+  color: var(--surface);
+}
+
+.status-tag.in-progress {
+  background: var(--peach);
+  color: var(--surface);
+}
+
+.cardBody {
+  padding: 1rem;
+  color: var(--primary-text);
+}
+
+.cardBody h3 {
+  margin-top: 0;
+  color: var(--primary-text);
+}
+
+.cardBody p {
+  color: var(--secondary-text);
+  margin-bottom: 0;
+}

@@ -1,10 +1,9 @@
+import "./ProjCards.css";
 
-import './ProjCards.css'
-
-export const Card = ({ title, descrip, image, status, link,  darkMode }) => {
+export const Card = ({ title, descrip, image, status, link, darkMode }) => {
   return (
     <div
-      className="card"
+      className={`card ${darkMode ? "dark" : ""}`}
       onClick={() => window.open(link, "_blank")}
       tabIndex={0}
       role="button"
@@ -21,4 +20,3 @@ export const Card = ({ title, descrip, image, status, link,  darkMode }) => {
     </div>
   );
 };
-  

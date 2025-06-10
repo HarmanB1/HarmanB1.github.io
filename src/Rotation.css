@@ -8,6 +8,38 @@
   gap: 1rem;
   overflow: visible;
   position: relative;
+  min-height: 400px; /* Added for better layout with condensed view */
+}
+
+/* View Controls */
+.view-controls {
+  position: absolute;
+  top: -50px;
+  right: 20px;
+  z-index: 10;
+}
+
+.view-toggle {
+  background: var(--light-purple);
+  color: var(--surface);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.view-toggle:hover {
+  background: var(--cool-indigo);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.view-toggle.active {
+  background: var(--mint-green);
+  color: var(--surface);
 }
 
 .nav-btn {
@@ -25,6 +57,7 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  z-index: 2;
 }
 
 .nav-btn:hover {
@@ -40,6 +73,7 @@
   border-radius: 1rem;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   background: var(--surface);
+  position: relative;
 }
 
 .slider {
@@ -70,6 +104,7 @@
   bottom: 1rem;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 2;
 }
 
 .dot {
@@ -84,4 +119,117 @@
 .dot.active {
   background-color: var(--light-purple);
   box-shadow: 0 0 6px var(--light-purple);
+}
+
+/* Condensed View Styles */
+.condensed-view {
+  width: 100%;
+  padding: 20px;
+  max-width: 900px;
+}
+
+.project-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-item {
+  background: var(--surface);
+  padding: 20px;
+  border-radius: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-color);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.project-header h3 {
+  margin: 0;
+  color: var(--primary-text);
+  font-size: 1.2rem;
+}
+
+.status {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.status.finished {
+  background: var(--mint-green);
+  color: var(--surface);
+}
+
+.status.in-progress {
+  background: var(--peach);
+  color: var(--surface);
+}
+
+.details-btn {
+  background: var(--light-purple);
+  color: var(--surface);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.2s ease;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.details-btn:hover {
+  background: var(--cool-indigo);
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .rotContainer {
+    padding: 1rem;
+    min-height: 350px;
+  }
+  
+  .view-controls {
+    top: -45px;
+    right: 10px;
+  }
+  
+  .view-toggle {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+  
+  .project-item {
+    padding: 15px;
+  }
+  
+  .project-header h3 {
+    font-size: 1.1rem;
+  }
+  
+  .details-btn {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
 }

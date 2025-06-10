@@ -13,25 +13,9 @@ import { Rotation } from "./Rotation";
 import { Card } from "./projCards";
 import "./Home.css";
 import { useEffect } from "react";
+import { workingProjects } from "./cardsData.js";
 
-const cards = [
-  <Card
-    key={1}
-    title="Wbs breakdown"
-    descrip="React, Express, SQL stack, project for a web application where users submit projects and can have project broken down by ai into managable tasks, and applicaiton will also simulate scrum environment with ai scrum master, and kanban board"
-    image=""
-    status="working"
-    link="https://github.com/HarmanB1/wbsBreak"
-  />,
-  <Card
-    key={2}
-    title="C++ RayTracer"
-    descrip="C++ project that simulates ray tracing on sphere"
-    image=""
-    status="working"
-    link="https://github.com/HarmanB1/Ray-Tracer"
-  />,
-];
+
 
 export const Home = ({ darkMode }) => {
 
@@ -62,7 +46,21 @@ export const Home = ({ darkMode }) => {
         <h2>Currently Working On</h2>
         <p>To see finished projects, check projects tab</p>
         <div className="rotation-container">
-          <Rotation cards={cards} />
+          <Rotation
+            cards={workingProjects.map((proj) => (
+              <Card
+                key={proj.id}
+                id={proj.id}
+                title={proj.title}
+                descrip={proj.descrip}
+                status={proj.status}
+                link={proj.link}
+                image={proj.image}
+                darkMode={darkMode}
+              />
+            ))}
+            darkMode={darkMode}
+          />
         </div>
       </div>
 

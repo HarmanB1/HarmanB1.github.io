@@ -7,6 +7,8 @@ import { About } from "./about.jsx";
 import { Projects } from "./projects.jsx";
 import { FiSun, FiMoon } from "react-icons/fi";
 import { NotFound } from "./error.jsx";
+import {ProjDetail} from "./projDetail.jsx"
+import { workingProjects, finishedProjects } from "./cardsData.js";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -95,6 +97,16 @@ function App() {
             <Route
               path="/projects"
               element={<Projects darkMode={darkMode} />}
+            />
+            <Route
+              path="/projects/:id"
+              element={
+                <ProjDetail
+                  workingProjects={workingProjects}
+                  finishedProjects={finishedProjects}
+                  darkMode={darkMode}
+                />
+              }
             />
 
             <Route path="/contact" element={<Contact darkMode={darkMode} />} />

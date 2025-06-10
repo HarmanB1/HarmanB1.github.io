@@ -9,7 +9,12 @@ import {
   FaBriefcase,
   FaChalkboardTeacher,
   FaShoppingBag,
+  FaTerminal,
+  FaDatabase,
+  FaFileAlt,
+  FaFileWord,
   FaFileExcel,
+  FaProjectDiagram,
 } from "react-icons/fa";
 import {
   DiJavascript,
@@ -20,13 +25,7 @@ import {
   DiGit,
   DiNpm,
 } from "react-icons/di";
-import {
-  SiCplusplus,
-  SiC,
-  SiJson,
-  SiMarkdown,
-  
-} from "react-icons/si";
+import { SiCplusplus, SiC, SiJson, SiMarkdown, SiCmake } from "react-icons/si";
 import "./about.css";
 
 export const About = () => {
@@ -37,7 +36,7 @@ export const About = () => {
         <p className="about-description">
           Passionate Computing Science student with experience in tutoring and
           customer service. Skilled in multiple programming languages and tools,
-          with strong organizational abilities.
+          with strong organizational abilities and multilingual proficiency.
         </p>
       </div>
 
@@ -47,107 +46,164 @@ export const About = () => {
           <FaCode className="section-icon" /> Skills
         </h3>
 
+        {/* Programming Languages */}
         <div className="skills-group">
           <h4>
-            <FaCode /> Programming Languages & Tools
+            <FaCode style={{ color: "#4f46e5" }} /> Programming Languages
           </h4>
           <div className="skills-grid">
-            <div className="skill-item">
-              <SiC size={24} />
+            <div className="skill-item" style={{ backgroundColor: "#eef2ff" }}>
+              <SiC size={24} color="#4f46e5" />
               <span>C</span>
             </div>
-            <div className="skill-item">
-              <SiCplusplus size={24} />
+            <div className="skill-item" style={{ backgroundColor: "#eef2ff" }}>
+              <SiCplusplus size={24} color="#4f46e5" />
               <span>C++</span>
             </div>
-            <div className="skill-item">
-              <DiPython size={24} />
+            <div className="skill-item" style={{ backgroundColor: "#f0fdf4" }}>
+              <DiPython size={24} color="#16a34a" />
               <span>Python</span>
             </div>
-            <div className="skill-item">
-              <DiHtml5 size={24} />
+            <div className="skill-item" style={{ backgroundColor: "#fef2f2" }}>
+              <DiHtml5 size={24} color="#dc2626" />
               <span>HTML</span>
             </div>
-            <div className="skill-item">
-              <DiCss3 size={24} />
+            <div className="skill-item" style={{ backgroundColor: "#f0f9ff" }}>
+              <DiCss3 size={24} color="#0369a1" />
               <span>CSS</span>
             </div>
-            <div className="skill-item">
-              <DiJavascript size={24} />
+            <div className="skill-item" style={{ backgroundColor: "#fef3c7" }}>
+              <DiJavascript size={24} color="#d97706" />
               <span>JavaScript</span>
             </div>
-            <div className="skill-item">
-              <DiReact size={24} />
-              <span>React</span>
-            </div>
           </div>
         </div>
 
+        {/* Frameworks & Libraries */}
         <div className="skills-group">
           <h4>
-            <FaTools /> Tools & Technologies
+            <FaTools style={{ color: "#9333ea" }} /> Frameworks & Libraries
           </h4>
           <div className="skills-grid">
-            <div className="skill-item">
-              <DiGit size={24} />
-              <span>Git</span>
+            <div className="skill-item" style={{ backgroundColor: "#f5f3ff" }}>
+              <DiReact size={24} color="#9333ea" />
+              <span>React</span>
             </div>
-            <div className="skill-item">
-              <DiNpm size={24} />
-              <span>npm</span>
-            </div>
-            <div className="skill-item">
-              <SiMarkdown size={24} />
-              <span>Markdown</span>
-            </div>
-            <div className="skill-item">
-              <SiJson size={24} />
-              <span>JSON</span>
-            </div>
-            <div className="skill-item">
-             
-              <span>Word</span>
-            </div>
-            <div className="skill-item">
-              <FaFileExcel size={24} />
-              <span>Excel</span>
+            <div className="skill-item" style={{ backgroundColor: "#f5f3ff" }}>
+              <SiCmake size={24} color="#9333ea" />
+              <span>CMake</span>
             </div>
           </div>
         </div>
 
+        {/* Databases */}
         <div className="skills-group">
           <h4>
-            <FaLanguage /> Languages
+            <FaDatabase style={{ color: "#2563eb" }} /> Databases
+          </h4>
+          <div className="skills-grid">
+            <div className="skill-item" style={{ backgroundColor: "#dbeafe" }}>
+              <FaDatabase size={24} color="#2563eb" />
+              <span>SQL</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Tools & Technologies */}
+        <div className="skills-group">
+          <h4>
+            <FaTools style={{ color: "#ea580c" }} /> Tools & Technologies
+          </h4>
+          <div className="skills-grid">
+            <div className="skill-item" style={{ backgroundColor: "#ffedd5" }}>
+              <DiGit size={24} color="#ea580c" />
+              <span>Git</span>
+            </div>
+            <div className="skill-item" style={{ backgroundColor: "#ffedd5" }}>
+              <DiNpm size={24} color="#ea580c" />
+              <span>npm</span>
+            </div>
+            <div className="skill-item" style={{ backgroundColor: "#ffedd5" }}>
+              <SiMarkdown size={24} color="#ea580c" />
+              <span>Markdown</span>
+            </div>
+            <div className="skill-item" style={{ backgroundColor: "#fce7f3" }}>
+              <SiJson size={24} color="#db2777" />
+              <span>JSON</span>
+            </div>
+            <div className="skill-item" style={{ backgroundColor: "#ecfdf5" }}>
+              <FaTerminal size={24} color="#059669" />
+              <span>CLI</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Office & Productivity */}
+        <div className="skills-group">
+          <h4>
+            <FaFileAlt style={{ color: "#7c3aed" }} /> Office & Productivity
+          </h4>
+          <div className="skills-grid">
+            <div className="skill-item" style={{ backgroundColor: "#f3e8ff" }}>
+              <FaFileWord size={24} color="#7c3aed" />
+              <span>Word</span>
+            </div>
+            <div className="skill-item" style={{ backgroundColor: "#f3e8ff" }}>
+              <FaFileExcel size={24} color="#7c3aed" />
+              <span>Excel</span>
+            </div>
+            <div className="skill-item" style={{ backgroundColor: "#f3e8ff" }}>
+              <FaProjectDiagram size={24} color="#7c3aed" />
+              <span>Agile</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Languages */}
+        <div className="skills-group">
+          <h4>
+            <FaLanguage style={{ color: "#c026d3" }} /> Languages
           </h4>
           <div className="languages-list">
-            <div className="language-item">
+            <div
+              className="language-item"
+              style={{ backgroundColor: "#fae8ff" }}
+            >
               <span className="language-name">English</span>
               <span className="language-level">Fluent</span>
             </div>
-            <div className="language-item">
+            <div
+              className="language-item"
+              style={{ backgroundColor: "#fae8ff" }}
+            >
               <span className="language-name">Punjabi/Hindi</span>
               <span className="language-level">Oral Communication</span>
             </div>
-            <div className="language-item">
+            <div
+              className="language-item"
+              style={{ backgroundColor: "#fae8ff" }}
+            >
               <span className="language-name">French</span>
               <span className="language-level">Basic</span>
             </div>
           </div>
         </div>
 
+        {/* Personal Attributes */}
         <div className="skills-group">
           <h4>
-            <FaUserTie /> Personal Attributes
+            <FaUserTie style={{ color: "#0d9488" }} /> Personal Attributes
           </h4>
           <ul className="attributes-list">
             <li>Excellent time management</li>
             <li>Strong organizational skills</li>
             <li>Capable of working independently</li>
+            <li>Agile methodology experience</li>
           </ul>
         </div>
       </div>
 
-      {/* GitHub Contribution Calendar */}
+      {/* GitHub Contributions */}
       <div className="glass-card">
         <h3>
           <FaCode className="section-icon" /> GitHub Contributions
@@ -184,13 +240,16 @@ export const About = () => {
           </div>
           <ul className="experience-details">
             <li>
-              Help students in Math, English, and Coding from grades 1 to 12
+              Simplified complex coding and math problems into small steps,
+              enabling students to grasp material more easily
             </li>
             <li>
-              Communicate with team members to improve teaching techniques
+              Communicated with team members to share and adapt teaching
+              techniques, leading to improved lesson quality
             </li>
             <li>
-              Develop personalized student goals by assessing needs and progress
+              Organized lesson plans for individual students generating an
+              increase in efficiency and focus of learning sessions
             </li>
           </ul>
         </article>
@@ -209,16 +268,17 @@ export const About = () => {
           </div>
           <ul className="experience-details">
             <li>
-              Provided customer service assisting customers in person and by
-              phone
+              Resolved customer concerns by actively listening to needs,
+              analyzing issues, and implementing appropriate solutions resulting
+              in improved customer retention and satisfaction
             </li>
             <li>
-              Promoted products using in-depth knowledge and engaging
-              presentations
+              Translated technical product details into actionable advice,
+              speeding up purchasing decisions.
             </li>
             <li>
-              Collaborated with sales team to coordinate efforts and maintain
-              store organization
+              Collaborated closely with fellow sales team members to organize
+              daily tasks, ensuring smooth store operations
             </li>
           </ul>
         </article>

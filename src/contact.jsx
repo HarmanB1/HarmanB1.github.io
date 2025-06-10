@@ -12,9 +12,9 @@ import {
 import { SiGmail } from "react-icons/si";
 import "./Contact.css";
 
-export const Contact = ( darkMode ) => {
+export const Contact = ({ darkMode }) => {
   return (
-    <div className="contact-container" id="contact">
+    <div className={`contact-container ${darkMode ? "dark" : ""}`} id="contact">
       <div className="glass-card contact-header">
         <h1>Get in Touch</h1>
         <p className="contact-description">
@@ -32,7 +32,7 @@ export const Contact = ( darkMode ) => {
         <ul className="contact-list">
           <li className="contact-item">
             <div className="contact-icon">
-              <FaClock color="#4f46e5" />
+              <FaClock color={darkMode ? "#5ecbff" : "#4f46e5"} />
             </div>
             <div>
               <strong>Monday, Tuesday, Wednesday, Thursday:</strong> 9 AM – 6 PM
@@ -40,7 +40,7 @@ export const Contact = ( darkMode ) => {
           </li>
           <li className="contact-item">
             <div className="contact-icon">
-              <FaUserClock color="#9333ea" />
+              <FaUserClock color={darkMode ? "#6c8efb" : "#9333ea"} />
             </div>
             <div>
               <strong>Saturday:</strong> Limited availability
@@ -48,7 +48,7 @@ export const Contact = ( darkMode ) => {
           </li>
           <li className="contact-item">
             <div className="contact-icon">
-              <FaClock color="#dc2626" />
+              <FaClock color={darkMode ? "#ff9e5e" : "#dc2626"} />
             </div>
             <div>
               <strong>Sunday:</strong> Unavailable
@@ -87,7 +87,7 @@ export const Contact = ( darkMode ) => {
           </li>
           <li className="contact-item">
             <div className="contact-icon">
-              <FaPhone color="#2563eb" />
+              <FaPhone color={darkMode ? "#5ecbff" : "#2563eb"} />
             </div>
             <div>
               <strong>Phone:</strong>{" "}
@@ -122,7 +122,7 @@ export const Contact = ( darkMode ) => {
           </li>
           <li className="contact-item">
             <div className="contact-icon">
-              <FaGithub size={20} color="#333" />
+              <FaGithub size={20} color={darkMode ? "#f0f0f0" : "#333"} />
             </div>
             <div>
               <a

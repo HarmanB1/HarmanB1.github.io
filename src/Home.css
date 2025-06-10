@@ -1,0 +1,130 @@
+/* Home Container */
+.home-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+  }
+  
+  /* Glass Card Styles */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+  }
+  
+  .intro-content {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Section Headers */
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #2d3748;
+  }
+  
+  h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #4a5568;
+  }
+  
+  .section-icon {
+    font-size: 1.4rem;
+  }
+  
+  /* Skills Highlight */
+  .skills-highlight {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .skill-tag {
+    background-color: #e0e7ff;
+    color: #4f46e5;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  
+  /* Interests Section */
+  .interests-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .interest-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+  }
+  
+  .interest-icon {
+    font-size: 1.2rem;
+  }
+  
+  .social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: #4f46e5;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+  
+  .social-link:hover {
+    color: #4338ca;
+    text-decoration: underline;
+  }
+  
+  /* Projects Section */
+  .rotation-container {
+    margin-top: 20px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .home-container {
+      padding: 15px;
+    }
+    
+    .glass-card {
+      padding: 20px;
+    }
+    
+    h1 {
+      font-size: 1.8rem;
+    }
+    
+    h2 {
+      font-size: 1.4rem;
+    }
+  }

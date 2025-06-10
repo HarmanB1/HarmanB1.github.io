@@ -1,7 +1,7 @@
 :root {
   /* Light Theme Colors */
-  --background: #fdfdfd;
-  --surface: #ffffff;
+  --background: #f8f9fa;       /* lighter gray background */
+  --surface: #ffffff;          /* pure white surface */
   --primary-text: #2c2c2c;
   --secondary-text: #555;
   --border-color: #e0e0e0;
@@ -21,7 +21,7 @@
 .dark {
   /* Dark Theme Colors */
   --background: #121212;
-  --surface: #1e1e1e;
+  --surface: #2a2a2a;          /* lighter dark surface */
   --primary-text: #f0f0f0;
   --secondary-text: #b0b0b0;
   --border-color: #333;
@@ -38,7 +38,11 @@
 }
 
 body {
-  background: linear-gradient(to bottom right, var(--background), color-mix(in srgb, var(--background) 90%, var(--cool-indigo) 10%));
+  background: linear-gradient(
+    to bottom right, 
+    var(--background), 
+    color-mix(in srgb, var(--background) 90%, var(--cool-indigo) 10%)
+  );
   color: var(--primary-text);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
@@ -148,7 +152,7 @@ main {
   padding: 2rem;
   background: var(--surface);
   border-radius: 16px;
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12); /* stronger shadow for separation */
   border: 1px solid var(--border-color);
   transition: all 0.3s ease;
 }

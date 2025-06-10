@@ -25,12 +25,12 @@ import {
   DiGit,
   DiNpm,
 } from "react-icons/di";
-import { SiCplusplus, SiC, SiJson, SiMarkdown, SiCmake , } from "react-icons/si";
-import "./about.css";
+import { SiCplusplus, SiC, SiJson, SiMarkdown, SiCmake } from "react-icons/si";
+import "./About.css";
 
-export const About = ( darkMode ) => {
+export const About = ({ darkMode }) => {
   return (
-    <div className="about-container">
+    <div className={`about-container ${darkMode ? "dark" : ""}`}>
       <div className="glass-card profile-header">
         <h2>About Me</h2>
         <p className="about-description">
@@ -49,31 +49,35 @@ export const About = ( darkMode ) => {
         {/* Programming Languages */}
         <div className="skills-group">
           <h4>
-            <FaCode style={{ color: "#4f46e5" }} /> Programming Languages
+            <FaCode style={{ color: darkMode ? "#6c8efb" : "#4f46e5" }} />{" "}
+            Programming Languages
           </h4>
           <div className="skills-grid">
-            <div className="skill-item" style={{ backgroundColor: "#eef2ff" }}>
-              <SiC size={24} color="#4f46e5" />
+            <div className="skill-item">
+              <SiC size={24} color={darkMode ? "#6c8efb" : "#4f46e5"} />
               <span>C</span>
             </div>
-            <div className="skill-item" style={{ backgroundColor: "#eef2ff" }}>
-              <SiCplusplus size={24} color="#4f46e5" />
+            <div className="skill-item">
+              <SiCplusplus size={24} color={darkMode ? "#6c8efb" : "#4f46e5"} />
               <span>C++</span>
             </div>
-            <div className="skill-item" style={{ backgroundColor: "#f0fdf4" }}>
-              <DiPython size={24} color="#16a34a" />
+            <div className="skill-item">
+              <DiPython size={24} color={darkMode ? "#95f0c2" : "#16a34a"} />
               <span>Python</span>
             </div>
-            <div className="skill-item" style={{ backgroundColor: "#fef2f2" }}>
-              <DiHtml5 size={24} color="#dc2626" />
+            <div className="skill-item">
+              <DiHtml5 size={24} color={darkMode ? "#ff9e5e" : "#dc2626"} />
               <span>HTML</span>
             </div>
-            <div className="skill-item" style={{ backgroundColor: "#f0f9ff" }}>
-              <DiCss3 size={24} color="#0369a1" />
+            <div className="skill-item">
+              <DiCss3 size={24} color={darkMode ? "#5ecbff" : "#0369a1"} />
               <span>CSS</span>
             </div>
-            <div className="skill-item" style={{ backgroundColor: "#fef3c7" }}>
-              <DiJavascript size={24} color="#d97706" />
+            <div className="skill-item">
+              <DiJavascript
+                size={24}
+                color={darkMode ? "#ffd3a5" : "#d97706"}
+              />
               <span>JavaScript</span>
             </div>
           </div>
@@ -82,15 +86,16 @@ export const About = ( darkMode ) => {
         {/* Frameworks & Libraries */}
         <div className="skills-group">
           <h4>
-            <FaTools style={{ color: "#9333ea" }} /> Frameworks & Libraries
+            <FaTools style={{ color: darkMode ? "#9d8aff" : "#9333ea" }} />{" "}
+            Frameworks & Libraries
           </h4>
           <div className="skills-grid">
-            <div className="skill-item" style={{ backgroundColor: "#f5f3ff" }}>
-              <DiReact size={24} color="#9333ea" />
+            <div className="skill-item">
+              <DiReact size={24} color={darkMode ? "#9d8aff" : "#9333ea"} />
               <span>React</span>
             </div>
-            <div className="skill-item" style={{ backgroundColor: "#f5f3ff" }}>
-              <SiCmake size={24} color="#9333ea" />
+            <div className="skill-item">
+              <SiCmake size={24} color={darkMode ? "#9d8aff" : "#9333ea"} />
               <span>CMake</span>
             </div>
           </div>
@@ -99,11 +104,12 @@ export const About = ( darkMode ) => {
         {/* Databases */}
         <div className="skills-group">
           <h4>
-            <FaDatabase style={{ color: "#2563eb" }} /> Databases
+            <FaDatabase style={{ color: darkMode ? "#5ecbff" : "#2563eb" }} />{" "}
+            Databases
           </h4>
           <div className="skills-grid">
-            <div className="skill-item" style={{ backgroundColor: "#dbeafe" }}>
-              <FaDatabase size={24} color="#2563eb" />
+            <div className="skill-item">
+              <FaDatabase size={24} color={darkMode ? "#5ecbff" : "#2563eb"} />
               <span>SQL</span>
             </div>
           </div>
@@ -112,27 +118,28 @@ export const About = ( darkMode ) => {
         {/* Tools & Technologies */}
         <div className="skills-group">
           <h4>
-            <FaTools style={{ color: "#ea580c" }} /> Tools & Technologies
+            <FaTools style={{ color: darkMode ? "#ff9e5e" : "#ea580c" }} />{" "}
+            Tools & Technologies
           </h4>
           <div className="skills-grid">
-            <div className="skill-item" style={{ backgroundColor: "#ffedd5" }}>
-              <DiGit size={24} color="#ea580c" />
+            <div className="skill-item">
+              <DiGit size={24} color={darkMode ? "#ff9e5e" : "#ea580c"} />
               <span>Git</span>
             </div>
-            <div className="skill-item" style={{ backgroundColor: "#ffedd5" }}>
-              <DiNpm size={24} color="#ea580c" />
+            <div className="skill-item">
+              <DiNpm size={24} color={darkMode ? "#ff9e5e" : "#ea580c"} />
               <span>npm</span>
             </div>
-            <div className="skill-item" style={{ backgroundColor: "#ffedd5" }}>
-              <SiMarkdown size={24} color="#ea580c" />
+            <div className="skill-item">
+              <SiMarkdown size={24} color={darkMode ? "#ff9e5e" : "#ea580c"} />
               <span>Markdown</span>
             </div>
-            <div className="skill-item" style={{ backgroundColor: "#fce7f3" }}>
-              <SiJson size={24} color="#db2777" />
+            <div className="skill-item">
+              <SiJson size={24} color={darkMode ? "#cfc7ff" : "#db2777"} />
               <span>JSON</span>
             </div>
-            <div className="skill-item" style={{ backgroundColor: "#ecfdf5" }}>
-              <FaTerminal size={24} color="#059669" />
+            <div className="skill-item">
+              <FaTerminal size={24} color={darkMode ? "#95f0c2" : "#059669"} />
               <span>CLI</span>
             </div>
           </div>
@@ -141,19 +148,23 @@ export const About = ( darkMode ) => {
         {/* Office & Productivity */}
         <div className="skills-group">
           <h4>
-            <FaFileAlt style={{ color: "#7c3aed" }} /> Office & Productivity
+            <FaFileAlt style={{ color: darkMode ? "#9d8aff" : "#7c3aed" }} />{" "}
+            Office & Productivity
           </h4>
           <div className="skills-grid">
-            <div className="skill-item" style={{ backgroundColor: "#f3e8ff" }}>
-              <FaFileWord size={24} color="#7c3aed" />
+            <div className="skill-item">
+              <FaFileWord size={24} color={darkMode ? "#9d8aff" : "#7c3aed"} />
               <span>Word</span>
             </div>
-            <div className="skill-item" style={{ backgroundColor: "#f3e8ff" }}>
-              <FaFileExcel size={24} color="#7c3aed" />
+            <div className="skill-item">
+              <FaFileExcel size={24} color={darkMode ? "#9d8aff" : "#7c3aed"} />
               <span>Excel</span>
             </div>
-            <div className="skill-item" style={{ backgroundColor: "#f3e8ff" }}>
-              <FaProjectDiagram size={24} color="#7c3aed" />
+            <div className="skill-item">
+              <FaProjectDiagram
+                size={24}
+                color={darkMode ? "#9d8aff" : "#7c3aed"}
+              />
               <span>Agile</span>
             </div>
           </div>
@@ -162,27 +173,19 @@ export const About = ( darkMode ) => {
         {/* Languages */}
         <div className="skills-group">
           <h4>
-            <FaLanguage style={{ color: "#c026d3" }} /> Languages
+            <FaLanguage style={{ color: darkMode ? "#cfc7ff" : "#c026d3" }} />{" "}
+            Languages
           </h4>
           <div className="languages-list">
-            <div
-              className="language-item"
-              style={{ backgroundColor: "#fae8ff" }}
-            >
+            <div className="language-item">
               <span className="language-name">English</span>
               <span className="language-level">Fluent</span>
             </div>
-            <div
-              className="language-item"
-              style={{ backgroundColor: "#fae8ff" }}
-            >
+            <div className="language-item">
               <span className="language-name">Punjabi/Hindi</span>
               <span className="language-level">Oral Communication</span>
             </div>
-            <div
-              className="language-item"
-              style={{ backgroundColor: "#fae8ff" }}
-            >
+            <div className="language-item">
               <span className="language-name">French</span>
               <span className="language-level">Basic</span>
             </div>
@@ -192,7 +195,8 @@ export const About = ( darkMode ) => {
         {/* Personal Attributes */}
         <div className="skills-group">
           <h4>
-            <FaUserTie style={{ color: "#0d9488" }} /> Personal Attributes
+            <FaUserTie style={{ color: darkMode ? "#95f0c2" : "#0d9488" }} />{" "}
+            Personal Attributes
           </h4>
           <ul className="attributes-list">
             <li>Excellent time management</li>
@@ -215,7 +219,7 @@ export const About = ( darkMode ) => {
             blockSize={14}
             blockMargin={4}
             fontSize={14}
-            colorScheme="light"
+            colorScheme={darkMode ? "dark" : "light"}
           />
         </div>
       </div>

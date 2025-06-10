@@ -55,6 +55,7 @@ export const Home = () => {
       
       <div className="glass-card projects-section">
         <h2>Currently Working On</h2>
+        <p>To see finished projects, check projects tab</p>
         <div className="rotation-container">
           <Rotation cards={cards} />
         </div>

@@ -1,0 +1,63 @@
+.card {
+    background: rgba(30, 30, 30, 0.8);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 0 20px var(--neon-fuchsia);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    outline: none;
+  }
+  
+  .card:hover {
+    transform: translateY(-6px);
+  }
+  
+  .card-img-container {
+    position: relative;
+  }
+  
+  .card-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-bottom: 2px solid var(--quantum-blue);
+  }
+  
+  .status-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 0.4rem 0.7rem;
+    border-radius: 1rem;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: white;
+    background: var(--quantum-blue);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+  }
+  
+  .status-badge.finished {
+    background: var(--neon-fuchsia);
+  }
+  
+  .status-badge.progress {
+    background: var(--gold-accent);
+  }
+  
+  .card-body {
+    padding: 1.25rem;
+  }
+  
+  .card-body h3 {
+    margin: 0 0 0.75rem;
+    font-size: 1.5rem;
+    color: var(--luxury-purple);
+  }
+  
+  .card-description p {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+    color: #ddd;
+  }
+  

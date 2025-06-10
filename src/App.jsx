@@ -10,6 +10,8 @@ import { FiSun, FiMoon } from "react-icons/fi";
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
+    
+
   useEffect(() => {
     // Check for saved theme preference or system preference
     const savedTheme = localStorage.getItem("theme");

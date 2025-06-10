@@ -12,6 +12,7 @@ import { SiLetterboxd, SiChessdotcom } from "react-icons/si";
 import { Rotation } from "./Rotation";
 import { Card } from "./projCards";
 import "./Home.css";
+import { useEffect } from "react";
 
 const cards = [
   <Card
@@ -33,6 +34,11 @@ const cards = [
 ];
 
 export const Home = ({ darkMode }) => {
+
+  useEffect(() => {
+    document.title = "HB | Home";
+  }, []);
+   
   return (
     <div className="home-container" id="overview">
       {/* Hero Section */}

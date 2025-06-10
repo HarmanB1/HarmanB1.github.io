@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect } from "react";
 import {
   FaEnvelope,
   FaPhone,
@@ -13,6 +13,10 @@ import { SiGmail } from "react-icons/si";
 import "./Contact.css";
 
 export const Contact = ({ darkMode }) => {
+  useEffect(() => {
+    document.title = "HB | Contacts";
+  }, []);
+  
   return (
     <div className={`contact-container ${darkMode ? "dark" : ""}`} id="contact">
       <div className="glass-card contact-header">

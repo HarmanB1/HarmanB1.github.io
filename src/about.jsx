@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect } from "react";
 import GitHubCalendar from "react-github-calendar";
 import {
   FaCode,
@@ -29,6 +29,10 @@ import { SiCplusplus, SiC, SiJson, SiMarkdown, SiCmake } from "react-icons/si";
 import "./About.css";
 
 export const About = ({ darkMode }) => {
+  useEffect(() => {
+      document.title = "HB | About";
+    }, []);
+
   return (
     <div className={`about-container ${darkMode ? "dark" : ""}`}>
       <div className="glass-card profile-header">

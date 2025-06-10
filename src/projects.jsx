@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import './projects.css';
 import {Card} from './projCards.jsx';
 import { Rotation } from "./Rotation.jsx";
@@ -31,6 +31,9 @@ const cards = [
 ];
 
 export const Projects = ({ darkMode }) => {
+  useEffect(() => {
+    document.title = "HB | Projects";
+  }, []);
   return (
     <div>
       <h1>My Projects</h1>

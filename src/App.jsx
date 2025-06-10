@@ -87,10 +87,13 @@ function App() {
 
         <main>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/" element={<Home />} darkMode={darkMode} />
+            <Route path="/about" element={<About darkMode={darkMode} />} />
+            <Route
+              path="/projects"
+              element={<Projects darkMode={darkMode} />}
+            />
+            <Route path="/contact" element={<Contact darkMode={darkMode} />} />
           </Routes>
         </main>
       </div>

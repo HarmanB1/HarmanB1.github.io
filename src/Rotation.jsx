@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Rotation.css";
 
-export const Rotation = ({ cards }) => {
+export const Rotation = ({ cards , darkMode }) => {
     const [currIndex, setCurrIndex] = useState(1);
     const [isTransitioning, setIsTransitioning] = useState(true);
     const [isAnimating, setIsAnimating] = useState(false); // New state to track animation

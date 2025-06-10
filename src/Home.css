@@ -68,8 +68,8 @@
   }
   
   .skill-tag {
-    background-color: var(--skill-bg);
-    color: var(--skill-text);
+    background-color: #d4f8d4; /* Light green */
+    color: #1b402f;            /* Darker green text for contrast */
     padding: 5px 12px;
     border-radius: 20px;
     font-size: 0.9rem;

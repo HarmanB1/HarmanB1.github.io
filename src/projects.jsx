@@ -30,13 +30,11 @@ const cards = [
   />,
 ];
 
-export const Projects = () => {
+export const Projects = ({ darkMode }) => {
   return (
     <div>
       <h1>My Projects</h1>
       <Rotation cards={cards} />
     </div>
   );
-  
-  
 };

@@ -1,7 +1,7 @@
 
 import './ProjCards.css'
 
-export const Card = ({ title, descrip, image, status, link }) => {
+export const Card = ({ title, descrip, image, status, link,  darkMode }) => {
   return (
     <div
       className="card"

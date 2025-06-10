@@ -1,4 +1,4 @@
-import React from "react";
+
 import {
   FaLaptopCode,
   FaChess,
@@ -16,23 +16,23 @@ import "./Home.css";
 const cards = [
   <Card
     key={1}
-    title="Alpha"
-    descrip="React project"
+    title="Wbs breakdown"
+    descrip="React, Express, SQL stack, project for a web application where users submit projects and can have project broken down by ai into managable tasks, and applicaiton will also simulate scrum environment with ai scrum master, and kanban board"
     image=""
     status="working"
-    link="https://example.com/alpha"
+    link="https://github.com/HarmanB1/wbsBreak"
   />,
   <Card
     key={2}
-    title="Beta"
-    descrip="ML project"
+    title="C++ RayTracer"
+    descrip="C++ project that simulates ray tracing on sphere"
     image=""
     status="working"
-    link="https://example.com/beta"
+    link="https://github.com/HarmanB1/Ray-Tracer"
   />,
 ];
 
-export const Home = () => {
+export const Home = ({ darkMode }) => {
   return (
     <div className="home-container" id="overview">
       {/* Hero Section */}

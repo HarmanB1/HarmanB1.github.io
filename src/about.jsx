@@ -25,10 +25,10 @@ import {
   DiGit,
   DiNpm,
 } from "react-icons/di";
-import { SiCplusplus, SiC, SiJson, SiMarkdown, SiCmake } from "react-icons/si";
+import { SiCplusplus, SiC, SiJson, SiMarkdown, SiCmake , } from "react-icons/si";
 import "./about.css";
 
-export const About = () => {
+export const About = ( darkMode ) => {
   return (
     <div className="about-container">
       <div className="glass-card profile-header">

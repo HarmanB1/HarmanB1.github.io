@@ -12,7 +12,7 @@ import {
 import { SiGmail } from "react-icons/si";
 import "./Contact.css";
 
-export const Contact = () => {
+export const Contact = ( darkMode ) => {
   return (
     <div className="contact-container" id="contact">
       <div className="glass-card contact-header">

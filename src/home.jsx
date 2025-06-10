@@ -1,27 +1,25 @@
 import React from "react";
 import "./Home.css";
+import { Rotation } from "./Rotation";
+import { Card } from "./projCards";
 
-const currentlyWorkingOn = [
-  {
-    title: "Java Mobile Apps",
-    description:
-      "Building mobile applications with Java and Android Studio to explore cross-platform UI, lifecycle handling, and REST APIs.",
-  },
-  {
-    title: "C# Windows Apps",
-    description:
-      "Learning C# and .NET to build desktop utilities with native Windows integration, using WPF and WinForms.",
-  },
-  {
-    title: "AI and Camera Tracking",
-    description:
-      "Using Python libraries like OpenCV, MediaPipe, and TensorFlow to create gesture-based authentication systems.",
-  },
-  {
-    title: "Gesture Unlock App",
-    description:
-      "My end goal is to create a cross-platform app that unlocks laptops using unique user gestures captured via webcam.",
-  },
+const cards = [
+  <Card
+    key={1}
+    title="Alpha"
+    descrip="React project"
+    image=""
+    status="working"
+    link="https://example.com/alpha"
+  />,
+  <Card
+    key={2}
+    title="Beta"
+    descrip="ML project"
+    image=""
+    status="working"
+    link="https://example.com/beta"
+  />,
 ];
 
 export const Home = () => {
@@ -56,13 +54,8 @@ export const Home = () => {
       </p>
 
       <h2>What I'm Currently Working On</h2>
-      <div className="carousel-wrapper">
-        {currentlyWorkingOn.map((item, index) => (
-          <div className="card" key={index}>
-            <h3>{item.title}</h3>
-            <p>{item.description}</p>
-          </div>
-        ))}
+      <div className="Rotation">
+        <Rotation cards={cards}/>
       </div>
 
       <h2>Interests</h2>

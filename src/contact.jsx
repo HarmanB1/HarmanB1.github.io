@@ -10,13 +10,13 @@ import {
   FaUserClock,
 } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-import "./Contact.css";
+import "./contact.css";
 
 export const Contact = ({ darkMode }) => {
   useEffect(() => {
     document.title = "HB | Contacts";
   }, []);
-  
+
   return (
     <div className={`contact-container ${darkMode ? "dark" : ""}`} id="contact">
       <div className="glass-card contact-header">

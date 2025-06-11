@@ -26,7 +26,7 @@ import {
   DiNpm,
 } from "react-icons/di";
 import { SiCplusplus, SiC, SiJson, SiMarkdown, SiCmake } from "react-icons/si";
-import "./About.css";
+import "./about.css";
 
 export const About = ({ darkMode }) => {
   useEffect(() => {

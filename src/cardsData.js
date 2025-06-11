@@ -35,12 +35,13 @@ export const finishedProjects = [
     link: "https://github.com/HarmanB1/Editor",
     site: "",
     image: TerminalEditorImg,
-    longD: `Developed a terminal text editor in C++ using ncurses library with mouse input support
-Implemented core editing features: typing, text navigation, deletion, and scrolling
-Added file operations: loading, saving, creating files, and directory management
- Integrated advanced features: copy/paste, word wrap, autosave, and customizable themes
-Designed interactive menus for efficient terminal-based workflow
- Optimized performance for power users in terminal environments`,
+    longD: `Developed a terminal-based text editor in C++ using the ncurses library, implementing core features like typing, scrolling, and mouse/keyboard navigation to support efficient text manipulation in constrained environments
+  
+  Integrated file I/O operations (load, save, create new), working directory settings, and .cfg file support to enable persistent user-specific sessions
+  
+  Added interactive menus and enhancements like mouse-based cursor placement, word wrap, clipboard-style cut/copy/paste, autosave, and theme configuration, resulting in a modern terminal UX tailored for speed and flexibility
+  
+  Structured code into modular components with clear separation between rendering, input handling, and file management, allowing for easier expansion and debugging during development`,
   },
   {
     id: "WorkoutSite",
@@ -51,12 +52,13 @@ Designed interactive menus for efficient terminal-based workflow
     link: "https://github.com/CMPT-276-SPRING-2025/final-project-17-sunsets",
     site: "https://gitfit.works/",
     image: WorkoutSiteImg,
-    longD: ` Designed and developed a responsive web app using React and CSS
-   Integrated OpenWeatherMap and Wger APIs for real-time workout and clothing suggestions
-   Created prototypes in Figma and developed MVS diagrams for efficient planning
-   Utilized Git, Scrum framework, and Kanban board for project management
-   Implemented user personas and stakeholder-aligned features to reduce development time
-   Delivered a personalized fitness app with weather-aware recommendations`,
+    longD: `Built a responsive React application delivering real-time fitness and clothing suggestions by integrating the OpenWeatherMap and Wger APIs, reducing user decision fatigue and improving engagement through contextual, weather-based recommendations
+  
+  Designed low- and high-fidelity prototypes in Figma, used MVS diagrams, and constructed user personas to align functionality with end-user needs
+  
+  Broke down goals into milestones using WBS planning and tracked progress with a Kanban board; coordinated work through Git, enabling smooth collaboration and quick task handoffs across the team
+  
+  Structured teamwork around Scrum practices, allowing our team to quickly adapt feedback and shift direction as needed while meeting deadlines`,
   },
   {
     id: "PersonalWebsite",
@@ -67,11 +69,11 @@ Designed interactive menus for efficient terminal-based workflow
     link: "https://github.com/HarmanB1/HarmanB1.github.io",
     site: "https://harmanb1.github.io",
     image: PersonalWebsiteImg,
-    longD: ` Implemented a responsive portfolio website using modern web technologies
-   Applied clean design principles for optimal user experience and accessibility
-   Wrote maintainable, well-structured code for future updates
-   Incorporated peer feedback to refine UI/UX elements
-   Showcased projects and skills with clear, concise presentation
-   Ensured cross-browser compatibility and mobile responsiveness`,
+    longD: `Created a responsive personal website using HTML and CSS, focused on clean layout, accessibility, and mobile compatibility
+  
+  Rebuilt the static site as a React application with reusable components and better file organization, simplifying future updates and project additions
+  
+  Applied peer feedback to revise content and navigation, resulting in a more intuitive browsing experience across devices`,
   },
 ];
+  

@@ -6,7 +6,7 @@
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
+  cursor: default;
   border: 1px solid var(--border-color);
 }
 
@@ -68,4 +68,39 @@
 .cardBody p {
   color: var(--secondary-text);
   margin-bottom: 0;
+}
+
+.cardImg {
+  cursor: pointer; /* Make only the image clickable */
+}
+
+.details-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--light-purple);
+  color: var(--surface);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.details-btn:hover {
+  background-color: var(--cool-indigo);
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dark .details-btn {
+  background-color: var(--mint-green);
+  color: var(--surface);
+}
+
+.dark .details-btn:hover {
+  background-color: var(--cool-indigo);
 }

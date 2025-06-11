@@ -1,3 +1,6 @@
+import TerminalEditorImg from "./imgs/Screenshot 2025-06-03 at 7.32.48 PM.png";
+import WorkoutSiteImg from "./imgs/Screenshot 2025-06-09 at 10.24.50 PM.png";
+import PersonalWebsiteImg from "./imgs/Screenshot 2025-06-09 at 10.24.29 PM.png";
 export const workingProjects = [
   {
     id: "wbsBreak",
@@ -8,7 +11,7 @@ export const workingProjects = [
     link: "https://github.com/HarmanB1/wbsBreak",
     image: "",
     site: "",
-    longD: `In progress`
+    longD: `In progress`,
   },
   {
     id: "C++Raytracer",
@@ -18,7 +21,7 @@ export const workingProjects = [
     link: "https://github.com/HarmanB1/Ray-Tracer",
     image: "",
     site: "",
-    longD:` In progress`
+    longD: ` In progress`,
   },
 ];
 
@@ -31,7 +34,7 @@ export const finishedProjects = [
     status: "finished",
     link: "https://github.com/HarmanB1/Editor",
     site: "",
-    image: "./src/imgs/Screenshot 2025-06-03 at 7.32.48 PM.png",
+    image: TerminalEditorImg,
     longD: `Developed a terminal text editor in C++ using ncurses library with mouse input support
 Implemented core editing features: typing, text navigation, deletion, and scrolling
 Added file operations: loading, saving, creating files, and directory management
@@ -47,7 +50,7 @@ Designed interactive menus for efficient terminal-based workflow
     status: "finished",
     link: "https://github.com/CMPT-276-SPRING-2025/final-project-17-sunsets",
     site: "https://gitfit.works/",
-    image: "./src/imgs/Screenshot 2025-06-09 at 10.24.50 PM.png",
+    image: WorkoutSiteImg,
     longD: ` Designed and developed a responsive web app using React and CSS
    Integrated OpenWeatherMap and Wger APIs for real-time workout and clothing suggestions
    Created prototypes in Figma and developed MVS diagrams for efficient planning
@@ -63,7 +66,7 @@ Designed interactive menus for efficient terminal-based workflow
     status: "finished",
     link: "https://github.com/HarmanB1/HarmanB1.github.io",
     site: "https://harmanb1.github.io",
-    image: "./src/imgs/Screenshot 2025-06-09 at 10.24.29 PM.png",
+    image: PersonalWebsiteImg,
     longD: ` Implemented a responsive portfolio website using modern web technologies
    Applied clean design principles for optimal user experience and accessibility
    Wrote maintainable, well-structured code for future updates

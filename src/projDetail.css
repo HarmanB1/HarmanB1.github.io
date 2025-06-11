@@ -1,0 +1,109 @@
+.project-detail {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    font-family: Arial, sans-serif;
+    color: #222;
+    background-color: #fefefe;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-detail.dark {
+    background-color: #1e1e1e;
+    color: #ddd;
+  }
+  
+  .project-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .project-description {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    padding-left: 1.2rem;
+  }
+  
+  .project-description li {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .project-detail.dark .project-description li {
+    border-bottom: 1px solid #444;
+  }
+  
+  .project-links {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .project-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.8rem 1.8rem;
+    background-color: #4CAF50; /* Light green */
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 50px; /* Fully rounded corners */
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .project-link:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+  
+  .project-detail.dark .project-link {
+    background-color: #2E7D32; /* Darker green for dark mode */
+  }
+  
+  .project-detail.dark .project-link:hover {
+    background-color: #1B5E20; /* Even darker green for dark mode hover */
+  }
+  
+  .project-status {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .project-detail.dark .project-status {
+    color: #bbb;
+  }
+  
+  .project-image {
+    display: block;
+    width: 80%;
+    max-width: 1000px; /* Smaller maximum width */
+    height: auto;
+    max-height: 1000px; /* Smaller maximum height */
+    object-fit: contain;
+    margin: 0 auto 1.5rem auto;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .project-short-description {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    color: #444;
+    line-height: 1.5;
+    text-align: center;
+  }
+  
+  .dark .project-short-description {
+    color: #aaa;
+  }

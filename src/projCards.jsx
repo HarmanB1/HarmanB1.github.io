@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./ProjCards.css";
+import "./projCards.css";
 
 export const Card = ({ title, descrip, image, status, link, darkMode, id }) => {
   return (

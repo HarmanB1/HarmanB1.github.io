@@ -7,6 +7,8 @@ import { Projects } from "./Projects.jsx";
 import { ProjDetail } from "./projDetail.jsx";
 import { NotFound } from "./error.jsx";
 
+
+//add star  
 const WORKING_PROJECTS = [
   {
     id: 101,
@@ -48,6 +50,25 @@ const FINISHED_PROJECTS = [
     tags: ["React", "HTML", "CSS", "Responsive Design", "Portfolio"],
     link: "YOUR_PORTFOLIO_LIVE_SITE_LINK",
     github: "YOUR_PORTFOLIO_GITHUB_LINK",
+    status: "Completed",
+    progress: 100,
+  }, {
+    id: 304,
+    title: "C Group Chat Server (TCP)",
+    descrip: "A C-based TCP group chat server simulation with multiple clients (fuzzers) and a two-phase commit protocol for graceful termination.",
+    tags: ["C", "TCP Sockets", "Concurrency", "Fuzzing", "Two-Phase Commit"],
+    link: null,
+    github: "https://github.com/HarmanB1/TCP-group-chat.git",
+    status: "Completed",
+    progress: 100,
+  },
+  {
+    id: 305,
+    title: "ProjectCourseBuilder (EduFind)",
+    descrip: "A full-stack course planning MVP built using the MERN stack (React, Express.js) and Supabase, featuring AI-driven personalized course recommendations.",
+    tags: ["React", "Express.js", "Supabase", "Tailwind CSS", "Deepseek AI", "SFU API"],
+    link: "YOUR_EDUFIND_LIVE_SITE_LINK",
+    github: "https://github.com/StormHacks-2025/ProjectCourseBuilder.git",
     status: "Completed",
     progress: 100,
   },

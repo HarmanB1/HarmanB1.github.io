@@ -3,7 +3,7 @@ import { Route, Routes, HashRouter, NavLink, useLocation } from "react-router-do
 import { AnimatePresence } from "framer-motion";
 import { FiSun, FiMoon } from "react-icons/fi";
 import { MainPage } from "./MainPage.jsx";
-import { Projects } from "./Projects.jsx";
+import { Projects } from "./Projects.jsx"; 
 import { ProjDetail } from "./projDetail.jsx";
 import { NotFound } from "./error.jsx";
 

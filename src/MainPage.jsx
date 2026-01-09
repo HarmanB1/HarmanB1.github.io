@@ -28,12 +28,12 @@ export const MainPage = ({ darkMode }) => {
           Computing Science Student @ SFU
         </h2>
         <p className="max-w-2xl text-lg text-zinc-600 dark:text-zinc-300 leading-relaxed">
-          I combine problem-solving with creativity. Passionate about projects that challenge user interaction boundaries. Experienced in tutoring and customer service, with strong organizational abilities.
+          I'm a 3rd year computer science student at Simon Fraser university. I'm passionate about create and developing new projects that develop my skills and solve real world problems. Experienced in tutoring and customer service, with strong organizational abilities.
         </p>
 
         <div className="flex gap-4">
           <SocialLink href="https://github.com/HarmanB1" icon={<FaGithub />} label="GitHub" />
-          <SocialLink href="www.linkedin.com/in/harman-bhogal-b2b532350" icon={<FaLinkedin />} label="LinkedIn" />
+          <SocialLink href="https://www.linkedin.com/in/harman-bhogal-b2b532350" icon={<FaLinkedin />} label="LinkedIn" />
           <SocialLink href="mailto:hba58@sfu.ca" icon={<FaEnvelope />} label="Email" />
         </div>
       </motion.section>
@@ -87,7 +87,7 @@ export const MainPage = ({ darkMode }) => {
             descList={[
               "Resolved customer concerns by actively listening to needs and analyzing issues to recommend appropriate solutions.",
               "Managed inventory and organized store displays, contributing to efficient operations.",
-              "Processed transactions accurately and efficiently using POS systems."
+              "Collaborated closely with fellow sales team members to organize daily tasks, ensuring smooth store operations"
             ]}
           />
         </div>

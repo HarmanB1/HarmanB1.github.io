@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui;
+}
+
+@variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    /* 2. Simplified: Apply background and text colors */
+    @apply bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100 transition-colors duration-300;
+  }
+}

@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from 'react-router-dom';
-import { FiArrowRight, FiGithub, FiExternalLink } from 'react-icons/fi';
+import { FiArrowRight, FiGithub, FiExternalLink, FiStar } from 'react-icons/fi';
 
-const Card = ({ id, title, descrip, tags, link, github, darkMode }) => {
+const Card = ({ id, title, descrip, tags, link, github, darkMode, thumbnail, featured }) => {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.95 }}
@@ -12,10 +12,25 @@ const Card = ({ id, title, descrip, tags, link, github, darkMode }) => {
       transition={{ duration: 0.3 }}
       className="bg-white dark:bg-zinc-900 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-zinc-200 dark:border-zinc-800 flex flex-col overflow-hidden"
     >
+      {thumbnail && (
+        <div className="w-full h-48 overflow-hidden bg-zinc-100 dark:bg-zinc-800">
+          <img
+            src={thumbnail}
+            alt={title}
+            className="w-full h-full object-cover"
+          />
+        </div>
+      )}
+
       <div className="p-6 flex flex-col flex-grow">
-        <h3 className="text-xl font-bold mb-2 text-zinc-900 dark:text-white">
-          {title}
-        </h3>
+        <div className="flex items-start justify-between mb-2">
+          <h3 className="text-xl font-bold text-zinc-900 dark:text-white">
+            {title}
+          </h3>
+          {featured && (
+            <FiStar className="text-yellow-500 fill-yellow-500 flex-shrink-0 ml-2" size={20} />
+          )}
+        </div>
 
         <p className="text-sm text-zinc-600 dark:text-zinc-400 flex-grow mb-4">
           {descrip}

@@ -125,7 +125,7 @@ const FINISHED_PROJECTS = [
     title: "Student Course Builder (EduFind)",
     descrip: "A full-stack course planning MVP built using React, Express.js, and Supabase, featuring AI-driven personalized course recommendations. Winner of StormHacks 2025 for Best Use of SFU Courses API.",
     tags: ["React", "Express.js", "Supabase", "Tailwind CSS", "Deepseek AI", "SFU API", "REST API", "PROTOTYPING"],
-    link: null,
+    link: "https://project-course-builder.vercel.app/",
     github: "https://github.com/StormHacks-2025/ProjectCourseBuilder",
     status: "Completed",
     progress: 100,

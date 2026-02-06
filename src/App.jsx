@@ -55,6 +55,30 @@ const FINISHED_PROJECTS = [
     ],
     learned: "This project deepened my understanding of low-level terminal manipulation, efficient file I/O operations, and memory management in C++. I learned how to handle user input events, manage screen refresh cycles, and create responsive UI in a constrained environment."
   },
+{
+  "id": 306,
+  "title": "rainCity: Predictive Traffic & Crime Monitoring",
+  "descrip": "A real-time hazard detection platform using YOLOv11 and Spring Boot to monitor city intersections and alert authorities.",
+  "tags": ["Spring Boot", "YOLOv11", "React", "WebSockets", "Supabase", "Python"],
+  "link": null,
+  "github": "https://github.com/TelusHackathon2026/rainCity",
+  "status": "Completed",
+  "progress": 100,
+  "thumbnail": null,
+  "featured": true,
+  "detailedDescription": "Developed for Telus Hackathon 2026, rainCity is a proactive emergency detection system. It analyzes live Vancouver traffic camera feeds to identify hazards like fallen trees and pedestrians in danger zones, enabling preventative response before incidents escalate.",
+  "features": [
+    "Custom fine-tuned YOLOv11 computer vision model trained on Google Colab",
+    "Real-time monitoring platform with sub-second hazard alerts via WebSockets",
+    "Weighted scoring algorithm evaluating danger factors against historical baselines",
+    "Full-stack integration using Spring Boot, React, and Tailwind CSS",
+    "Historical hazard logging and data persistence with Supabase",
+    "Interactive dashboard for emergency services visualization"
+  ],
+  "learned": "I mastered the integration of Python-based ML models with a Java Spring Boot backend. I learned how to handle high-frequency data streams using WebSockets for real-time UI updates and gained experience in fine-tuning computer vision models for specific urban environmental hazards."
+}
+
+  ,
   {
     id: 302,
     title: "Workout Recommendation App",

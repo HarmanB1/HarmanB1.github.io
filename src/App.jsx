@@ -33,7 +33,7 @@ const WORKING_PROJECTS = [
 const FINISHED_PROJECTS = [
   {
     id: 307,
-    title: "ViperProtection: Mountain Madness 2026 -> winner of best overall Hackathon Project, Best use of DigitalOcean",
+    title: "ViperProtection",
     descrip: "Invisible adversarial poisoning for digital art. Protect your images from AI training scrapers without changing a single visible pixel.",
     tags: ["React", "FastAPI", "PostgreSQL", "Python", "DigitalOcean", "VAE", "CLIP", "Adversarial ML", "PyTorch"],
     link: "https://www.youtube.com/watch?v=39qpKKAfcaE",
@@ -42,6 +42,8 @@ const FINISHED_PROJECTS = [
     progress: 100,
     thumbnail: null,
     featured: true,
+    category: "Hackathon",
+    award: "Mountain Madness 2026 — Best Overall & Best Use of DigitalOcean",
     detailedDescription: "Built at Mountain Madness 2026, ViperProtection is a full-stack web application that lets artists protect their digital artwork from AI training scrapers using adversarial machine learning. It injects imperceptible pixel-level perturbations into images, nearly invisible to the human eye, that permanently corrupt any model trained on the poisoned image. The original image is stored as encrypted binary in PostgreSQL, never publicly accessible, and only retrievable via password.",
     features: [
       "Adversarial poisoning via a custom VAE + CLIP ML pipeline: invisible to humans, lethal to AI models",
@@ -65,7 +67,8 @@ const FINISHED_PROJECTS = [
     status: "Completed",
     progress: 100,
     thumbnail: null,
-    featured: false,
+    featured: true,
+    category: "Systems",
     detailedDescription: "A fully-featured terminal text editor that brings modern text editing capabilities to the command line. Built from scratch using C++ and ncurses, it provides a responsive and intuitive editing experience without leaving the terminal.",
     features: [
       "Full mouse support for cursor positioning",
@@ -90,6 +93,7 @@ const FINISHED_PROJECTS = [
     progress: 100,
     thumbnail: null,
     featured: true,
+    category: "Hackathon",
     detailedDescription: "Developed for Telus Hackathon 2026, rainCity is a proactive emergency detection system. It analyzes live Vancouver traffic camera feeds to identify hazards like fallen trees and pedestrians in danger zones, enabling preventative response before incidents escalate.",
     features: [
       "Custom fine-tuned YOLOv11 computer vision model trained on Google Colab",
@@ -112,6 +116,7 @@ const FINISHED_PROJECTS = [
     progress: 100,
     thumbnail: null,
     featured: false,
+    category: "Product",
     detailedDescription: "GitFit is a comprehensive fitness application that adapts workout recommendations based on current weather conditions. The app helps users stay active regardless of the weather by suggesting appropriate indoor or outdoor exercises and clothing.",
     features: [
       "Real-time weather-based workout recommendations",
@@ -132,7 +137,8 @@ const FINISHED_PROJECTS = [
     status: "Completed",
     progress: 100,
     thumbnail: null,
-    featured: true,
+    featured: false,
+    category: "Portfolio",
     detailedDescription: "A modern, responsive portfolio website built to showcase my projects and technical skills. Features smooth animations, dark mode support, and an intuitive navigation experience.",
     features: [
       "Responsive design that works on all devices",
@@ -155,6 +161,7 @@ const FINISHED_PROJECTS = [
     progress: 100,
     thumbnail: null,
     featured: false,
+    category: "Systems",
     detailedDescription: "A robust multi-client chat server implemented in C using TCP sockets. The server handles concurrent connections, message broadcasting, and implements a two-phase commit protocol to ensure all clients gracefully disconnect.",
     features: [
       "Multi-threaded server supporting multiple concurrent clients",
@@ -168,7 +175,7 @@ const FINISHED_PROJECTS = [
   },
   {
     id: 305,
-    title: "Student Course Builder (EduFind): StormHacks 2025 -> winner of best use of SFU course API",
+    title: "EduFind — Student Course Builder",
     descrip: "A full-stack course planning MVP built using React, Express.js, and Supabase, featuring AI-driven personalized course recommendations. Winner of StormHacks 2025 for Best Use of SFU Courses API.",
     tags: ["React", "Express.js", "Supabase", "Tailwind CSS", "Deepseek AI", "SFU API", "REST API", "PROTOTYPING"],
     link: "https://project-course-builder.vercel.app/",
@@ -177,6 +184,8 @@ const FINISHED_PROJECTS = [
     progress: 100,
     thumbnail: null,
     featured: true,
+    category: "Hackathon",
+    award: "StormHacks 2025 — Best Use of SFU Courses API",
     detailedDescription: "EduFind is an intelligent course planning application that helps students at SFU create personalized course schedules. The app reads student transcripts, provides AI-powered recommendations, and allows interactive schedule customization. Built in 24 hours during StormHacks 2025, where it won Best Use of SFU Courses API.",
     features: [
       "AI-powered course recommendations using Deepseek API",
@@ -239,8 +248,18 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/80 dark:bg-zinc-950/80 border-b border-zinc-200 dark:border-zinc-800">
       <div className="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
-        <div className="logo font-bold text-xl tracking-tight text-zinc-900 dark:text-white">
-          HB
+        <div className="flex items-center gap-3">
+          <div className="h-9 w-9 rounded-xl bg-zinc-900 dark:bg-zinc-50 flex items-center justify-center text-xs font-black text-white dark:text-zinc-950 shadow-sm">
+            HB
+          </div>
+          <div className="leading-tight">
+            <div className="text-sm font-semibold tracking-tight text-zinc-900 dark:text-white">
+              Harman Bhogal
+            </div>
+            <div className="text-[11px] uppercase tracking-[0.18em] text-zinc-500 dark:text-zinc-400">
+              Software · Builder
+            </div>
+          </div>
         </div>
 
         <div className="flex items-center gap-6">

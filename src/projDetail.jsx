@@ -3,6 +3,29 @@ import { useParams, Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FiArrowLeft, FiGithub, FiExternalLink, FiStar } from "react-icons/fi";
 
+const getYoutubeEmbedUrl = (link) => {
+  if (!link) return null;
+  try {
+    const url = new URL(link);
+    if (url.hostname !== "www.youtube.com" && url.hostname !== "youtube.com" && url.hostname !== "youtu.be") {
+      return null;
+    }
+
+    let videoId = "";
+    if (url.hostname === "youtu.be") {
+      const parts = url.pathname.split("/").filter(Boolean);
+      videoId = parts[0] || "";
+    } else {
+      videoId = url.searchParams.get("v") || "";
+    }
+
+    if (!videoId) return null;
+    return `https://www.youtube.com/embed/${videoId}`;
+  } catch {
+    return null;
+  }
+};
+
 export const ProjDetail = ({ projects, darkMode }) => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -34,7 +57,7 @@ export const ProjDetail = ({ projects, darkMode }) => {
       <header className="mb-8">
         <div className="flex items-start justify-between gap-4 flex-wrap">
           <div className="flex-1">
-            <div className="flex items-center gap-2 mb-2">
+            <div className="flex items-center gap-2 mb-3">
               <h1 className="text-3xl font-bold text-zinc-900 dark:text-white">
                 {project.title}
               </h1>
@@ -42,7 +65,14 @@ export const ProjDetail = ({ projects, darkMode }) => {
                 <FiStar className="text-yellow-500 fill-yellow-500" size={24} />
               )}
             </div>
-            <div className="flex flex-wrap gap-2 mb-4">
+
+            {project.award && (
+              <div className="inline-flex items-center rounded-full bg-amber-500/90 text-white px-3 py-1 text-xs font-semibold tracking-wide mb-3">
+                WINNER · {project.award}
+              </div>
+            )}
+
+            <div className="flex flex-wrap gap-2 mt-2 mb-4">
               {project.tags.map((tag, index) => (
                 <span
                   key={index}
@@ -87,6 +117,20 @@ export const ProjDetail = ({ projects, darkMode }) => {
             alt={project.title}
             className="w-full h-full object-cover"
           />
+        </div>
+      )}
+
+      {getYoutubeEmbedUrl(project.link) && (
+        <div className="mb-8 rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-800 bg-zinc-950/5 dark:bg-zinc-50/5">
+          <div className="aspect-video">
+            <iframe
+              src={getYoutubeEmbedUrl(project.link)}
+              title={project.title}
+              className="w-full h-full"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
         </div>
       )}
 

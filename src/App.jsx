@@ -32,6 +32,30 @@ const WORKING_PROJECTS = [
 
 const FINISHED_PROJECTS = [
   {
+    id: 307,
+    title: "ViperProtection: Mountain Madness 2026 -> winner of best overall Hackathon Project, Best use of DigitalOcean",
+    descrip: "Invisible adversarial poisoning for digital art. Protect your images from AI training scrapers without changing a single visible pixel.",
+    tags: ["React", "FastAPI", "PostgreSQL", "Python", "DigitalOcean", "VAE", "CLIP", "Adversarial ML", "PyTorch"],
+    link: "https://www.youtube.com/watch?v=39qpKKAfcaE",
+    github: "https://github.com/MountainM2026/ViperProtection",
+    status: "Completed",
+    progress: 100,
+    thumbnail: null,
+    featured: true,
+    detailedDescription: "Built at Mountain Madness 2026, ViperProtection is a full-stack web application that lets artists protect their digital artwork from AI training scrapers using adversarial machine learning. It injects imperceptible pixel-level perturbations into images, nearly invisible to the human eye, that permanently corrupt any model trained on the poisoned image. The original image is stored as encrypted binary in PostgreSQL, never publicly accessible, and only retrievable via password.",
+    features: [
+      "Adversarial poisoning via a custom VAE + CLIP ML pipeline: invisible to humans, lethal to AI models",
+      "protected image is nearly visually identical to the original",
+      "Original stored as encrypted binary in PostgreSQL, password-protected and never publicly accessible",
+      "Optional in-browser watermark drawing before processing",
+      "Adjustable perturbation strength (low / medium / high epsilon)",
+      "Protection score, semantic similarity score, and AI-view visualizations returned per image",
+      "Processed images hosted on DigitalOcean Spaces CDN",
+      "Full REST API with FastAPI — supports upload, retrieval, listing, and deletion"
+    ],
+    learned: "Gained hands-on experience integrating a Python-based adversarial ML pipeline with a FastAPI backend. Learned to handle secure binary storage in PostgreSQL, manage cloud object storage with DigitalOcean Spaces, and build a full-stack pipeline from image upload to CDN delivery. Deepened my understanding of adversarial machine learning and how perturbation-based attacks affect model training."
+  },
+  {
     id: 301,
     title: "Terminal Text Editor",
     descrip: "A modern terminal-based text editor built in C++ with ncurses, featuring mouse support, autosave, word wrap, and theme customization.",
@@ -44,7 +68,7 @@ const FINISHED_PROJECTS = [
     featured: false,
     detailedDescription: "A fully-featured terminal text editor that brings modern text editing capabilities to the command line. Built from scratch using C++ and ncurses, it provides a responsive and intuitive editing experience without leaving the terminal.",
     features: [
-      "Full mouse support for cursor positioning ",
+      "Full mouse support for cursor positioning",
       "Automatic saving with configurable intervals",
       "Text manipulation tools such as scrolling, and line operations such as copy, cut and paste.",
       "Word wrap for better readability",
@@ -55,30 +79,28 @@ const FINISHED_PROJECTS = [
     ],
     learned: "This project deepened my understanding of low-level terminal manipulation, efficient file I/O operations, and memory management in C++. I learned how to handle user input events, manage screen refresh cycles, and create responsive UI in a constrained environment."
   },
-{
-  "id": 306,
-  "title": "rainCity: Predictive Traffic & Crime Monitoring",
-  "descrip": "A real-time hazard detection platform using YOLOv11 and Spring Boot to monitor city intersections and alert authorities.",
-  "tags": ["Spring Boot", "YOLOv11", "React", "WebSockets", "Supabase", "Python"],
-  "link": null,
-  "github": "https://github.com/TelusHackathon2026/rainCity",
-  "status": "Completed",
-  "progress": 100,
-  "thumbnail": null,
-  "featured": true,
-  "detailedDescription": "Developed for Telus Hackathon 2026, rainCity is a proactive emergency detection system. It analyzes live Vancouver traffic camera feeds to identify hazards like fallen trees and pedestrians in danger zones, enabling preventative response before incidents escalate.",
-  "features": [
-    "Custom fine-tuned YOLOv11 computer vision model trained on Google Colab",
-    "Real-time monitoring platform with sub-second hazard alerts via WebSockets",
-    "Weighted scoring algorithm evaluating danger factors against historical baselines",
-    "Full-stack integration using Spring Boot, React, and Tailwind CSS",
-    "Historical hazard logging and data persistence with Supabase",
-    "Interactive dashboard for emergency services visualization"
-  ],
-  "learned": "I mastered the integration of Python-based ML models with a Java Spring Boot backend. I learned how to handle high-frequency data streams using WebSockets for real-time UI updates and gained experience in fine-tuning computer vision models for specific urban environmental hazards."
-}
-
-  ,
+  {
+    id: 306,
+    title: "rainCity: Predictive Traffic & Crime Monitoring",
+    descrip: "A real-time hazard detection platform using YOLOv11 and Spring Boot to monitor city intersections and alert authorities.",
+    tags: ["Spring Boot", "YOLOv11", "React", "WebSockets", "Supabase", "Python"],
+    link: null,
+    github: "https://github.com/TelusHackathon2026/rainCity",
+    status: "Completed",
+    progress: 100,
+    thumbnail: null,
+    featured: true,
+    detailedDescription: "Developed for Telus Hackathon 2026, rainCity is a proactive emergency detection system. It analyzes live Vancouver traffic camera feeds to identify hazards like fallen trees and pedestrians in danger zones, enabling preventative response before incidents escalate.",
+    features: [
+      "Custom fine-tuned YOLOv11 computer vision model trained on Google Colab",
+      "Real-time monitoring platform with sub-second hazard alerts via WebSockets",
+      "Weighted scoring algorithm evaluating danger factors against historical baselines",
+      "Full-stack integration using Spring Boot, React, and Tailwind CSS",
+      "Historical hazard logging and data persistence with Supabase",
+      "Interactive dashboard for emergency services visualization"
+    ],
+    learned: "I mastered the integration of Python-based ML models with a Java Spring Boot backend. I learned how to handle high-frequency data streams using WebSockets for real-time UI updates and gained experience in fine-tuning computer vision models for specific urban environmental hazards."
+  },
   {
     id: 302,
     title: "Workout Recommendation App",
@@ -146,7 +168,7 @@ const FINISHED_PROJECTS = [
   },
   {
     id: 305,
-    title: "Student Course Builder (EduFind)",
+    title: "Student Course Builder (EduFind): StormHacks 2025 -> winner of best use of SFU course API",
     descrip: "A full-stack course planning MVP built using React, Express.js, and Supabase, featuring AI-driven personalized course recommendations. Winner of StormHacks 2025 for Best Use of SFU Courses API.",
     tags: ["React", "Express.js", "Supabase", "Tailwind CSS", "Deepseek AI", "SFU API", "REST API", "PROTOTYPING"],
     link: "https://project-course-builder.vercel.app/",
@@ -165,11 +187,13 @@ const FINISHED_PROJECTS = [
       "Responsive design optimized for student workflows",
       "Interactive AI chat feature, to allow users to ask the AI backend for courses"
     ],
-    learned: "Built a full-stack application under tight time constraints, learning to prioritize features and make quick technical decisions. Gained experience integrating multiple APIs (SFU Courses API and Deepseek AI) and handling complex data relationships. Designed a backend to handle user frontned requests making use of REST API skills. Learned to build effective database schemas with Supabase and create intuitive UIs for complex workflows. Developed skills in rapid prototyping and hackathon project execution."
+    learned: "Built a full-stack application under tight time constraints, learning to prioritize features and make quick technical decisions. Gained experience integrating multiple APIs (SFU Courses API and Deepseek AI) and handling complex data relationships. Designed a backend to handle user frontend requests making use of REST API skills. Learned to build effective database schemas with Supabase and create intuitive UIs for complex workflows. Developed skills in rapid prototyping and hackathon project execution."
   },
 ];
 
-export { WORKING_PROJECTS, FINISHED_PROJECTS }; function App() {
+export { WORKING_PROJECTS, FINISHED_PROJECTS };
+
+function App() {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
@@ -197,7 +221,6 @@ export { WORKING_PROJECTS, FINISHED_PROJECTS }; function App() {
       <div className="min-h-screen flex flex-col font-sans selection:bg-zinc-900 selection:text-white dark:selection:bg-white dark:selection:text-black">
         <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
 
-        {/* Main Content Area */}
         <main className="grow pt-24 px-4 sm:px-8 max-w-5xl mx-auto w-full">
           <AnimatedRoutes
             darkMode={darkMode}
@@ -212,7 +235,6 @@ export { WORKING_PROJECTS, FINISHED_PROJECTS }; function App() {
   );
 }
 
-// Extracted Navbar
 const Navbar = ({ darkMode, toggleDarkMode }) => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/80 dark:bg-zinc-950/80 border-b border-zinc-200 dark:border-zinc-800">
@@ -257,7 +279,6 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
   );
 };
 
-// Extracted Routes
 const AnimatedRoutes = ({ darkMode, workingProjects, finishedProjects }) => {
   const location = useLocation();
 
